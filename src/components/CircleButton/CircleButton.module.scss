@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-background);
+  color: var(--gray-text);
+  border-radius: 100%;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.transparent {
+  background-color: transparent;
+}

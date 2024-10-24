@@ -9,7 +9,7 @@ export default function Login() {
       <div className="flex flex-col mb-8">
         <h1 className="text-[#333] text-3xl">Log in</h1>
         <div className="flex justify-center text-base">
-          <h3>Don't have an account?</h3>
+          <h3>{`Don't have an account?`}</h3>
           <Link href={"/register"} className="underline ml-2">
             Sign up
           </Link>

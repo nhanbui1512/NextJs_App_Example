@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: var(--gray-background);
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  position: relative;
+  cursor: pointer;
+  :hover {
+    border-radius: 32px;
+    background-color: #2a2a2a;
+  }
+}
