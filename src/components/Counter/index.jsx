@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Counter() {
@@ -14,7 +13,6 @@ export default function Counter() {
       <div>{count}</div>
       <button onClick={handleIncrease}>Increase</button>
       <br />
-      <Link href={"/dashboard"}>Dashboard</Link>
     </div>
   );
 }

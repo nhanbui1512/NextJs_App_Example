@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.text {
+  background-color: transparent;
+  color: #b3b3b3;
+}
