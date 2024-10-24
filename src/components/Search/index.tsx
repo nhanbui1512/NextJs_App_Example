@@ -15,7 +15,7 @@ export default function Search() {
           <SearchIcon className="text-[var(--gray-text)]" />
         </CircleButton>
       </div>
-      <div className="w-full">
+      <div className={cx("input-wrapper", "w-full")}>
         <input className="bg-transparent outline-none py-3 pr-16 pl-[42px] w-full cursor-pointer" />
       </div>
 

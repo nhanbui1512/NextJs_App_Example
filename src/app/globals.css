@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "normalize.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,16 +11,13 @@
   --gray-text: #b3b3b3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,10 +25,4 @@ html *::-webkit-scrollbar {
   border-radius: 0;
   width: none;
   display: none;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }

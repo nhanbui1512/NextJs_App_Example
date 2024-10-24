@@ -1,12 +1,18 @@
 .wrapper {
-  background-color: var(--gray-background);
   display: flex;
   align-items: center;
-  border-radius: 32px;
   position: relative;
   cursor: pointer;
-  :hover {
-    border-radius: 32px;
+  border-radius: 32px;
+}
+.input-wrapper {
+  background-color: #1f1f1f;
+  border-radius: 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  &:hover {
     background-color: #2a2a2a;
+    border: 1px solid rgb(118, 118, 118);
   }
 }
