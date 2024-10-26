@@ -11,15 +11,15 @@ const cx = classNames.bind(styles);
 
 export default function Header() {
   return (
-    <header className={cx(["h-[64px] p-2 bg-black"])}>
+    <header className={cx(["h-[64px] py-2 bg-black"])}>
       <div className={cx("wrapper")}>
-        <div className="mx-5">
+        <div className="mx-5 cursor-pointer">
           <SpotifyLogo />
         </div>
         <div className="w-[546px] min-w-[350px]">
           <div className="flex items-center">
             <CircleButton tooltipContent="Trang chủ">
-              <Home sx={{ fontSize: 24 }} />
+              <Home sx={{ fontSize: 24, color: "#fff" }} />
             </CircleButton>
             <div className="flex-1">
               <div className="px-2">

@@ -32,14 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className={cx("content")}>
-          <Header />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className={cx(["content", "bg-black px-2"])}>
           <ToastContainer />
-          <div className="h-[500px]">{children}</div>
-          <footer className="h-[200px]">Footer</footer>
+          <Header />
+          <div className="flex-1 mb-2">{children}</div>
+          <footer className={cx("footer")}>Footer</footer>
         </div>
       </body>
     </html>

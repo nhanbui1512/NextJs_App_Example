@@ -19,7 +19,7 @@ export default function Search() {
         <input className="bg-transparent outline-none py-3 pr-16 pl-[42px] w-full cursor-pointer" />
       </div>
 
-      <div className={"absolute top-0 right-0"}>
+      <div className={cx(["devider", "absolute top-0 right-0"])}>
         <CircleButton transparent tooltipContent="Duyệt tìm">
           <StorageIcon />
         </CircleButton>

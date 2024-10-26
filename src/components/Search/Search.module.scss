@@ -16,3 +16,12 @@
     border: 1px solid rgb(118, 118, 118);
   }
 }
+.devider::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 25px;
+  background-color: #7c7c7c;
+  top: 50%;
+  transform: translateY(-50%);
+}
