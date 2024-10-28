@@ -11,20 +11,17 @@ type CircleButtonProps = {
   children: ReactNode;
   transparent?: boolean;
   tooltipContent?: string;
+  className?: string;
 };
-export default function CircleButton({
-  children,
-  tooltipContent,
-  transparent = false,
-}: CircleButtonProps) {
+export default function CircleButton({ children, tooltipContent, transparent = false, className }: CircleButtonProps) {
   return (
     <>
       {tooltipContent ? (
         <Tippy arrow={false} content={tooltipContent}>
-          <div className={cx("wrapper", { transparent })}>{children}</div>
+          <div className={cx("wrapper", { transparent }, className)}>{children}</div>
         </Tippy>
       ) : (
-        <div className={cx("wrapper", { transparent })}>{children}</div>
+        <div className={cx("wrapper", { transparent }, className)}>{children}</div>
       )}
     </>
   );
